@@ -14,7 +14,7 @@ Resource        ../demoWebShopPages/globalKeywords.robot
 Resource        ../demoWebShopPages/demoWebShopItemPage.robot
 
 # Suite Setup and Tear Down Section
-Suite Setup     test setup
+Suite Setup     test setup      ${url}
 #Suite Teardown  Close Browser
 
 # Test Case template

@@ -6,11 +6,11 @@ Library         String
 Library         Collections
 
 *** Variables ***
-${url}         http://demowebshop.tricentis.com/
+#${url}         http://demowebshop.tricentis.com/
 
 *** Keywords ***
 test setup
-    #[Arguments]                     ${url}
+    [Arguments]                     ${url}
     ${chromedriver_path}=           Get Chromedriver Path
     Create Webdriver                Chrome      executable_path=${chromedriver_path}
     Go To                           ${url}
